@@ -50,7 +50,7 @@ export default {
 				return vm.label;
 			}
 			if (vm.authorizable) {
-				return vm.authorizableInstance.fullName;
+				return vm.authorizableInstance.fullName || vm.authorizableInstance.id;
 			}
 			return '';
 		},
