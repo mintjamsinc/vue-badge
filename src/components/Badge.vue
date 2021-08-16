@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2021 MintJams Inc. Licensed under MIT License. -->
 
 <template>
-	<div class="mi-badge">
+	<div class="mi-badge bg-black-50">
 		<div v-if="hasAvatar" class="pr-2 d-inline-block"><Avatar :authorizable="authorizable"/></div>
 		<div v-if="!hasAvatar" class="pl-3 d-inline-block"></div>
 
