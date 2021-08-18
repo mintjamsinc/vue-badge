@@ -1,6 +1,6 @@
 {
   "name": "@mintjamsinc/vue-badge",
-  "version": "1.4.0",
+  "version": "1.5.1",
   "description": "A reusable Badge component for Vue.js 2.x used by webtop applications.",
   "main": "dist/bundle.common.js",
   "scripts": {

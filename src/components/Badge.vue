@@ -19,6 +19,9 @@ export default {
 		'authorizable': {
 			'type': Object,
 		},
+		'item': {
+			'type': Object,
+		},
 		'icon': {
 			'type': String,
 		},
@@ -48,8 +51,18 @@ export default {
 			}
 			return undefined;
 		},
+		itemInstance() {
+			let vm = this;
+			if (vm.item) {
+				if (vm.item.$data) {
+					return vm.item;
+				}
+				return window.Webtop.cmsClient.newItem(vm.item);
+			}
+			return undefined;
+		},
 		hasAvatar() {
-			return !!this.authorizable;
+			return !!this.authorizable || !!this.item;
 		},
 		labelText() {
 			let vm = this;
@@ -58,6 +71,9 @@ export default {
 			}
 			if (vm.authorizable) {
 				return vm.authorizableInstance.fullName || vm.authorizableInstance.id;
+			}
+			if (vm.item) {
+				return vm.itemInstance.name;
 			}
 			return '';
 		},
