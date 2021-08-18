@@ -2,7 +2,7 @@
 
 <template>
 	<div class="mi-badge bg-black-50">
-		<div v-if="hasAvatar" class="pr-2 d-inline-block"><Avatar :authorizable="authorizable"/></div>
+		<div v-if="hasAvatar" class="pr-2 d-inline-block"><Avatar :authorizable="authorizable" class="text-white"/></div>
 		<div v-if="!hasAvatar" class="pl-3 d-inline-block"></div>
 
 		<div class="label font-weight-semibold text-white text-shadow text-truncate d-inline-block">{{labelText}}</div>
