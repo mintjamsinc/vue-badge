@@ -1,6 +1,6 @@
 {
   "name": "@mintjamsinc/vue-badge",
-  "version": "1.2.4",
+  "version": "1.3.0",
   "description": "A reusable Badge component for Vue.js 2.x used by webtop applications.",
   "main": "dist/bundle.common.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mintjamsinc/vue-badge#readme",
   "devDependencies": {
-    "@mintjamsinc/vue-avatar": "^1.4.3",
+    "@mintjamsinc/vue-avatar": "^1.5.0",
     "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-eslint": "^4.5.13",
     "@vue/cli-service": "^4.5.13",
