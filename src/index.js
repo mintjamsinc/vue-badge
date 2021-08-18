@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import Badge from './components/Badge.vue';
 
-const version = '1.5.1';
+const version = '1.6.0';
 
 const compatible = (/^2\./).test(Vue.version);
 if (!compatible) {

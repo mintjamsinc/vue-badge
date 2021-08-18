@@ -7,7 +7,7 @@
 
 		<div class="label font-weight-semibold text-white text-shadow text-truncate d-inline-block" :style="{'max-width': maxLabelWidth}">{{labelText}}</div>
 
-		<div class="pr-3 d-inline-block"><slot></slot></div>
+		<div class="pr-2 mr-1 d-inline-block"><slot></slot></div>
 	</div>
 </template>
 
