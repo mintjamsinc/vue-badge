@@ -62,7 +62,7 @@ export default {
 			return undefined;
 		},
 		hasAvatar() {
-			return !!this.authorizable || !!this.item;
+			return !!this.authorizable || !!this.item || !!this.icon;
 		},
 		labelText() {
 			let vm = this;
