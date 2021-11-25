@@ -2,7 +2,7 @@
 
 <template>
 	<div class="mi-badge bg-black-50">
-		<div v-if="hasAvatar" class="pr-2 d-inline-block"><Avatar :authorizable="authorizable" :icon="icon" class="text-white"/></div>
+		<div v-if="hasAvatar" class="pr-2 d-inline-block"><Avatar :authorizable="authorizable" :icon="icon" :identifier="identifier" :image="image" :lazyImage="lazyImage" class="text-white"/></div>
 		<div v-if="!hasAvatar" class="pl-2 mr-1 d-inline-block"></div>
 
 		<div class="label font-weight-semibold text-white text-shadow text-truncate d-inline-block" :style="{'max-width': maxLabelWidth}">{{labelText}}</div>
@@ -24,6 +24,16 @@ export default {
 		},
 		'icon': {
 			'type': String,
+		},
+		'identifier': {
+			'type': String,
+		},
+		'image': {
+			'type': String,
+		},
+		'lazyImage': {
+			'type': Boolean,
+			'default': true,
 		},
 		'label': {
 			'type': String,
@@ -62,7 +72,7 @@ export default {
 			return undefined;
 		},
 		hasAvatar() {
-			return !!this.authorizable || !!this.item || !!this.icon;
+			return !!this.authorizable || !!this.item || !!this.icon || !!this.identifier || !!this.image;
 		},
 		labelText() {
 			let vm = this;
